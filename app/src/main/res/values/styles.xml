@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/text_redesign</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/text_redesign</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/text_redesign</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="SearchView_light">
+        <item name="searchBackground">@color/white</item>
+        <item name="hintColor">@color/black_hint</item>
+        <item name="android:textColor">@color/text_redesign</item>
+        <item name="backIconTint">@color/text_redesign</item>
+        <item name="iconsTint">@color/text_redesign</item>
+    </style>
+</resources>

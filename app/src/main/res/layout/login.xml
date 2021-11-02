@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/wals"
+    tools:context=".Login.LoginModel">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/searchs" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/identificate"
+            android:textSize="36dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/text_redesign"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="Usuario:"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/text_redesign"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/forms_designs"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:hint="@string/ingrese_el_usuario"
+            android:textColor="@color/text_redesign"
+            android:textColorHint="@color/black_hint"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="Contraseña:"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/text_redesign"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/forms_designs"
+            android:ems="10"
+            android:hint="@string/ingrese_la_contrase_a"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:imeOptions="actionSend"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textColor="@color/text_redesign"
+            android:textColorHint="@color/black_hint"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/text_redesign"
+            android:theme="@style/MyCheckbox"
+            android:text="@string/ver_contrase_a"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_ok"
+            android:text="@string/iniciar_sesi_n"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:textColor="@color/text_redesign"
+            android:layout_marginBottom="24dp"
+            android:text="@string/register_here"/>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

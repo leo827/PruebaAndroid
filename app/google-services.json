@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1059703870684",
+    "project_id": "buscador-de-tiendas-edd0b",
+    "storage_bucket": "buscador-de-tiendas-edd0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059703870684:android:6cb91c9e66492641ec5019",
+        "android_client_info": {
+          "package_name": "com.firemix.storeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059703870684-i1cfeununnppp257ll5gpnmd6e4itlq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firemix.storeapp",
+            "certificate_hash": "9e1a4ceab979059619e4046452e96f2ecaaf0e19"
+          }
+        },
+        {
+          "client_id": "1059703870684-gfeucc98ve36jdfdfjgghq70adtg6678.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs4rAJI0JH83SybxBk676n5nHbl768BD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059703870684-gfeucc98ve36jdfdfjgghq70adtg6678.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

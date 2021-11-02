@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.firemix.storeapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_shop"
+        android:label="@string/app_name"
+        android:name=".StoreApplication"
+        android:roundIcon="@drawable/ic_shop"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".Login.LoginModel"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Register.RegisterModel"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+        </activity>
+
+        <activity
+            android:name=".Stores.Registers.RegisterStoreModel"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+        </activity>
+
+        <activity
+            android:name=".Stores.MapsStore.MapStoreModel"
+            android:screenOrientation="portrait"
+            android:theme="@style/MapsTheme"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+        </activity>
+
+        <activity
+            android:name=".Stores.LoadsStores.StoresModel"
+            android:screenOrientation="portrait"
+            android:theme="@style/MapsTheme"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+        </activity>
+
+        <activity
+            android:name=".Stores.DetailsStore.DetailsModel"
+            android:screenOrientation="portrait"
+            android:theme="@style/MapsTheme"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity">
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.firemix.storeapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
